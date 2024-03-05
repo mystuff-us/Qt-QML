@@ -38,7 +38,7 @@ Initial Screen:
 
 ![Initial_Map_screen](https://github.com/mystuff-us/Qt-QML/assets/160074491/91a01038-c85f-446a-812f-469435b0c428)
 
-Dropdown changed to NYC:
+Dropdown changed to NYC and dialog resized:
 
 ![DropdownChange_to_NYC](https://github.com/mystuff-us/Qt-QML/assets/160074491/5c30f0ee-aab5-4b6d-a09d-b3fce591b840)
 
