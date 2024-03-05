@@ -49,7 +49,8 @@ Website button pressed:
 
 ---------------------------------------
 
-Application Infotainment01App is mostly qml with a c++ backend for populating various qml components.
+Application Infotainment01App is mostly qml with a c++ backend for populating various qml components. It was inspired by MontyTheSoftwareEngineer on YouTube (https://www.youtube.com/watch?v=Tq-E6lqO6tM&t=177s).
+
 The main screen is separted into three areas, left, right, and bottom screens.
 
 The bottom bar's temperature controls are controlled by class TemperatureCtrl.
@@ -77,11 +78,43 @@ Typing a URL into the search box opens the URL in the browser window:
 ![Vehicle_Infotainment_04](https://github.com/mystuff-us/Qt-QML/assets/160074491/1ce9144c-6085-4226-94b9-f2bf11882744)
 
 
+---------------------------------------
+
+
+Application MusicPlayerApp is a simple audio playback application with an interface into Jamendo.com for playing online content. The application is inspired by Scythe Studio (https://www.youtube.com/@scythe-studio) and (https://github.com/scytheStudio).
+
+MusicPlayer has a simple interface displaying a graphic associated with a composer, the composer's name and song, play controls, and a menu option to select songs or to search for online content.
+
+The application exercises QMediaPlayer, QAbstractListModel, QNetworkAccessManager, in addition to core qt classes. QML widgets get their data from c++ using qmlRegisterSingletonInstance() as shown in main.cpp. See AudioSearchModel.cpp for the Jamendo.com interface.
+
+
+The initial application screen:
+
+![MusicPlayer_01](https://github.com/mystuff-us/Qt-QML/assets/160074491/f85fcd53-a4ff-403a-8cac-adec4290f99c)
+
+Playing a song and switching to the next song:
+
+![MusicPlayer_02](https://github.com/mystuff-us/Qt-QML/assets/160074491/a18bd9a2-d79a-4d49-91be-4ef7b55c5b5b)
+
+The dropdown menu displaying available songs, and a "+" button to add online content:
+
+![MusicPlayer_03](https://github.com/mystuff-us/Qt-QML/assets/160074491/451579ae-bdec-4238-b411-7db259755b41)
+
+Entering "jazz" to search for online content from Jamendo.com:
+
+![MusicPlayer_04](https://github.com/mystuff-us/Qt-QML/assets/160074491/64f5a145-a511-475a-b1db-870c85faf897)
+
+The selected song is added to the list of available songs, and can be played:
+
+![MusicPlayer_06](https://github.com/mystuff-us/Qt-QML/assets/160074491/0ad05d1d-8df7-459a-ab3b-dcf27a03f6e9)
+
+The dropdown menu's playlist can be edited, removing songs by selecting the 'trash-can' icon:
+
+![MusicPlayer_07](https://github.com/mystuff-us/Qt-QML/assets/160074491/4eebe602-82f7-4c37-bd4b-f8f6c95dcf8e)
+
 
 
 
 
 
 ---------------------------------------
-
-
