@@ -21,4 +21,4 @@ The app also uses one of three methods for exposing c++ objects to qml - registe
 8) To use the slot 'setSomeVar(QString)' use:
    myClass.setSomeVar("Some string value")
 
-![image](https://github.com/mystuff-us/Qt-QML/assets/160074491/bcce7127-ae42-4202-bfb4-034b7effe1fe)
+![QtQml01_app_image](https://github.com/mystuff-us/Qt-QML/assets/160074491/8af6f150-4df3-42be-be23-cd782037902b)
