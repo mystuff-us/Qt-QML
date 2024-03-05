@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Map 01</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QQuickWidget" name="the_map">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>381</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="resizeMode">
+     <enum>QQuickWidget::SizeRootObjectToView</enum>
+    </property>
+    <property name="source">
+     <url>
+      <string>qrc:/map.qml</string>
+     </url>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>380</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string extracomment="Shows coordinates for this label and QuickWidget"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="city_cb">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string extracomment="Select a city"/>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Select a City</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>San Francisco</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>New York</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>London</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Paris</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="webView_">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string extracomment="Display website"/>
+    </property>
+    <property name="text">
+     <string>View Website...</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="webWidget_" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>381</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string extracomment="Displays a website">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <zorder>label_</zorder>
+   <zorder>city_cb</zorder>
+   <zorder>webView_</zorder>
+   <zorder>webWidget_</zorder>
+   <zorder>the_map</zorder>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QQuickWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">QtQuickWidgets/QQuickWidget</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
