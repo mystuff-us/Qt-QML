@@ -2,11 +2,11 @@
  Qt QML Examples
 
 
-Application Map 01 is a c++ application but interfaces with a qml component to display the map. It uses standard qt widgets (QWidget, QComboBox, QLabel, QPushButton and one qml widget, QQuickWidget.
+Application Map 01 is a c++ application but interfaces with a qml component to display the map. It uses standard qt widgets (QWidget, QComboBox, QLabel, QPushButton, and one qml widget, QQuickWidget.
 
-Map 01 displays a map using QWebEngineView in a QQuickWidget, and a web page in a QWidget tied to the QML component map.qml.
+Map 01 displays a map in a QQuickWidget tied to the QML component map.qml, and an URL using QWebEngineView in a QWidget.
 
-The map uses qt's sample code to display a map, initially centered over San Francisco. The dropdown changes the map view according to the selected city (New York City, London, Paris). The map can be panned and zoomed.
+The map uses qt's sample qml code to display a map, initially centered over San Francisco. The dropdown changes the map view according to the selected city (New York City, London, Paris). The map can be panned and zoomed.
 
 As the dialog resizes the qml component displaying the map is resized via Q_PROPERTY() of MainWindow.h and MainWindow::resizeEvent().
 
