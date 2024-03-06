@@ -1,7 +1,7 @@
 # Qt-QML
  Qt QML Examples
 
-Contained within are Qt QML examples, Map_01 being a c++ application that interfaces with a QML widget, and Infotainment01, MusicPlayer, and QtQtml01 being QML applications that interface with c++ objects.
+Contained within are Qt QML examples, Map_01 is a C++ application that interfaces with a QML widget, and Infotainment01, MusicPlayer, and QtQtml01 are QML applications that interface with C++ objects.
 
 See each application's README.md for more details.
 
